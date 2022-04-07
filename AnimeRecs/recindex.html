@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <meta charset="utf-8">
+        <head>
+            <title>Contact Form</title>
+            <link rel="stylesheet" href="pagestyle.css">
+            <script defer src="script.js"></script>
+            <script src="https://kit.fontawesome.com/4424cdfbbc.js" crossorigin="anonymous"></script>
+        </head>
+        <body>
+            <div class="banner "> 
+                <img src= "narutologo.png" class="logo">
+            </div>
+            <div class="container">
+                    <div class="recinfo"> 
+                        <div class="information">
+                            <h1>Recommendations</h1>
+                            Help me figure out some shows or manga to check out by recommending them below!
+                        </div>
+                    <form class ="form" id="form" onsubmit="checkInputs();" action="#">
+                        <div class = "user"><h4>Social Username</h4>
+                            <div class="form-control">
+                                <div class="inputbox">
+                                <input type="text" id="username" placeholder="What is your @?"></input>
+                                <small>error message</small>
+                                </div>
+                            </div>
+
+                            <div class = "title"><h4>Title of Series</h4>
+                                <div class="form-control">
+                                    <div class="inputbox">
+                                    <input type="text" id="title" placeholder="What is the title?"></input>
+                                    <small>error message</small>
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="mediatype">
+                            <div class = "selection3"><h4> Is this an anime or a manga? </h4>
+                                <div class="form-control">
+                                    <input class = "form-input1" type="checkbox" name="c0" id="select1" value = "anime">
+                                    <label for ="Anime"> Anime </label>
+                                    <input class = "form-input1" type="checkbox" name="c0" id="select1" value = "manga">
+                                    <label for ="Anime"> Manga </label>
+                        </div>
+                        <div class="form-control">
+                            <div class="size"><h4>How Long Is This Series?</h4>
+                            <select name ="size" id="shsize">
+                                <option value = "select" disabled selected hidden> Episode / Chapter Count </option>
+                                <option value ="s"> 10-12 </option>
+                                <option value ="m"> 13-24 </option>
+                                <option value ="l"> 25-100 </option>
+                                <option value ="ex"> 101-250 </option>
+                                <option value ="exx"> 250-1000 </option>
+                                <option value ="giga"> 1000+ </option>
+                                <option value ="movie"> At least 1 movie </option>
+                                </select>
+                                <small>error message</small>
+                            </div>
+                        </div> 
+                        <div class="demo"><h4>What is this anime/manga's demographic?</h4>
+                            <div class="selection1">
+                                <div class="form-control">
+                                        <input class = "form-input2" type="radio" name="c1" id="select4" value="Kodomo">
+                                        <label for="Kodomo"> Kodomo-muke  - Young Kids</label><br>
+
+                                        <input class = "form-input2" type="radio" name="c1" id="select1" value="Shounen">
+                                        <label for="Shounen">Shounen - Young Males</label><br>
+                    
+                                        <input class = "form-input2" type="radio" name="c1" id="select2" value="Shojo">
+                                        <label for="Shojo">Shojo - Young Females (Early Mid Teens)</label><br>
+                                        
+                                        <input class = "form-input2" type="radio" name="c1" id="select3" value="Seinen">
+                                        <label for="Seinen">Seinen - Older Male Teens, Young Adults </label><br>
+                    
+                                        <input class = "form-input2" type="radio" name="c1" id="select4" value="Josei">
+                                        <label for="Josei">Josei - Older Female Teens, Young Adults</label><br>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="genre"><h4>What genre is this anime/manga?</h4>
+                            <div class="selection2">
+                                <div class="form-control">
+                                    <div class="side1">
+                                        <input class = "form-input3" type="radio" name="sol" id="select1" value="Isekai">
+                                        <label for="Isekai">Isekai</label><br>
+                    
+                                        <input class = "form-input3" type="radio" name="sol" id="select2" value="Action">
+                                        <label for="Action">Action</label><br>
+                                        
+                                        <input class = "form-input3" type="radio" name="sol" id="select3" value="Drama">
+                                        <label for="Drama">Drama</label><br>
+                    
+                                        <input class = "form-input3" type="radio" name="sol" id="select4" value="Fantasy">
+                                        <label for="Fantasy">Fantasy</label><br>
+
+                                        <input class = "form-input3" type="radio" name="sol" id="select4" value="Adventure">
+                                        <label for="Adventure">Adventure </label><br>
+
+                                        <input class = "form-input3" type="radio" name="sol" id="select4" value="Music">
+                                        <label for="Music">Music</label><br>
+
+                                        <input class = "form-input3" type="radio" name="sol" id="select4" value="SloL">
+                                        <label for="SloL">Slice of Life</label><br>
+
+                                        <input class = "form-input3" type="radio" name="sol" id="select4" value="Thriller">
+                                        <label for="Thriller">Thriller</label><br>
+                                        
+                                        
+                                    </div>
+                                    <div class="side2">
+                                        <input class = "form-input4" type="radio" name="sol" id="select5" value="Supernatural">
+                                        <label for ="Supernatural">Supernatural</label><br>
+                    
+                                        <input class = "form-input5" type="radio" name="sol" id="select6" value="Sports">
+                                        <label for="Sports">Sports</label><br>
+                    
+                                        <input class = "form-input6" type="radio" name="sol" id="select7" value="Comedy">
+                                        <label for="Comedy">Comedy</label><br>
+                    
+                                        <input class = "form-input7" type="radio" name="sol" id="select8" value="Mecha">
+                                        <label for="Mecha">Mecha</label><br>
+
+                                        <input class = "form-input7" type="radio" name="sol" id="select8" value="Mystery">
+                                        <label for="Mystery">Mystery</label><br>
+
+                                        <input class = "form-input7" type="radio" name="sol" id="select8" value="Sci-Fi">
+                                        <label for="Sci-Fi">Sci-Fi</label><br>
+
+                                        <input class = "form-input7" type="radio" name="sol" id="select8" value="Romance">
+                                        <label for="Romance">Romance</label><br>
+
+                                        <input class = "form-input7" type="radio" name="sol" id="select8" value="Other">
+                                        <label for="Other">Other</label><br>
+                                        <small>error message</small>
+                                        
+                                    </div>
+                                </div>                          
+                            </div>
+                        </div>
+                        <div class="center">
+                            <button>Submit<i class="fa-solid fa-arrow-right"></i></button>
+                        </div>
+                    </form>
+                </div>
+             </div>
+        </body>
+</html>

@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    display:flex;
+	font-family: Raleway;
+    margin-top:-10px;
+	margin-left: 0;
+    padding-top:130px;
+    margin-bottom:650px;
+}
+
+
+.container{
+    max-width: 960px;
+    margin:auto;
+    padding: 13px 20px;
+    width: 450px;
+    height:10px;
+}
+
+.solution{
+    margin-top:10px;
+}
+.h1{
+    color:black;
+
+}
+
+.information{
+    font:inherit;
+    text-align: center;
+    margin-bottom:40px;
+}
+
+.form-control small {
+	color: #e74c3c;
+	bottom: 0;
+	left: 0;
+	visibility: hidden;
+}
+
+.fa-arrow-right{
+    font-size:15px;
+    color:white !important;
+    padding-left:10px;
+
+}
+
+.selection2 .side1{
+    float:left;
+    display:block;
+    margin-right:35px;
+    
+}
+
+.form-input{
+    margin-top:6px;
+}
+h4{
+    margin: 0px 0px 3px 0px;
+    font-size:small;
+}
+
+.selection2{
+    margin-top: 15px;
+}
+
+.form-control{
+    margin:1.5px;
+}
+
+.form-control.error small {
+	visibility: visible;
+}
+
+
+.banner{
+    position:absolute;
+    background:#324E5F;
+    top:0;
+    left:0;
+    width: 100%;
+}
+
+.logo{
+    position:relative;
+    width:150px;
+    padding-left: 25px;
+    padding-top: 20px ;
+    padding-bottom: 20px;
+}
+
+button{
+    padding:10px;
+    background-color:#094B73; 
+    color:#fff;
+    display:block;
+    font-size:large;
+    border:none;
+    margin-top:20px;
+    margin-left: 60px;
+    padding: 10px 20px;
+    border-radius:5px;
+    font:inherit;
+    cursor: pointer;
+    font-weight:600;    
+}
+
+button:hover{
+    background-color:#0A5F92;
+    cursor:pointer;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.01);
+}
+
+button:focus{
+    background-color:#17A1F4;
+    cursor:pointer;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.01);
+}
+
+.form-control.success input[type='text']{
+	border-color: #2ecc71;
+}
+
+.form-control.error input[type='text']{
+	border-color: #e74c3c;
+    
+}
+.form-control input[type='text']:focus {
+	outline: 0;
+	border-color: #AA00FF;
+    background-color:white;
+    
+}
+
+.form-control{
+    margin-bottom:10px;
+}
+
+.form-control input[type='text'] {
+	border: 2px solid #f0f0f0;
+    background-color: #EDEAEA ;
+	border-radius: 4px;
+	display: block;
+	font-family: inherit;
+	font-size: 14px;
+	padding: 10px;
+	width: 100%;
+
+}
+
+
+select{
+    width:410px;
+    display:block;
+    background:fixed #EDEAEA ;
+    outline: none;
+    border: none;
+    padding: 6.5px;
+    border-radius: 3px;
+    font:inherit;
+}
+
+.form-control label {
+	display: inline-block;
+	margin-bottom: 5px;
+}
